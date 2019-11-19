@@ -1,0 +1,108 @@
+.menu{width: 100%;}
+.menu h2{
+    height: 200px;
+    line-height: 200px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.menu .tit_menu{
+    width: 100%;
+}
+.menu .tit_menu ul.tit{
+    width: 800px;
+    margin: 0 auto;
+    
+}
+.menu .tit_menu ul.tit li{
+    float: left;
+    width: 33%;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+
+}
+.menu .tit_menu ul.tit li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    box-sizing: border-box;
+        border: 1px solid #111;
+    border-right: 0;
+}
+.menu .tit_menu ul.tit li:last-child a{
+    border-right: 1px solid #111;
+}
+.menu .tit_menu ul.tit li.on a{
+    background-color: #e21a22;
+    color: #fff;
+    font-weight: bold;
+    border: 0;
+}
+.menu .contents ul{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: none;
+}
+.menu .contents  ul li{
+    float: left;
+    width:210px;
+    margin: 30px 48px;
+    height:256px;
+}
+
+.menu .contents  ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+.menu .contents  ul li a::after{
+    content: "";
+    transform: scale(0);
+    transition: all 0.6s;
+}
+.menu .contents  ul li a:hover::after{
+    content: "자세히보기";
+    width: 100%;
+    height: 210px;
+    position: absolute;
+    left: 0;
+    top:0;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    line-height: 200px;
+    transform: scale(1);
+}
+.menu .contents  ul li a img{
+    width: 200px;
+    height: 200px;
+}
+.menu  .contents ul li a p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2;
+}
+.menu .contents  ul li a span{
+    display: block;
+    text-align: center;
+    
+}
+.menu ul.chicken{
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.menu ul.side{
+    display: none;     
+}
+.menu ul.on{
+    display: block;
+}
