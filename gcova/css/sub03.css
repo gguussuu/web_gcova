@@ -1,0 +1,13 @@
+.store{
+    width: 100%;
+    height: 500px;
+    margin: 100px 0;
+}
+.store h2{
+    text-align: center;
+    font-size: 30px;
+}
+.store #map{
+    width: 100%;
+    height: 300px;
+}
