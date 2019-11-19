@@ -1,0 +1,266 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+body {
+    font-family: 'NanumSquare', sans-serif;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+}
+
+header .container {
+    position: relative;
+}
+/*로그인,회원가입*/
+header .h_top {
+    width: 100%;
+    height: 50px;
+}
+
+header .h_top ul {
+    float: right;
+}
+
+header .h_top ul li {
+    width: 60px;
+    float: left;
+    font-size: 15px;
+    line-height: 50px;
+}
+
+header .h_top ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*온라인주문 및 sns*/
+header .h_bottom {
+    width: 100%;
+    height: 114px;
+    box-sizing: border-box;
+}
+
+header .h_bottom .online_order {
+    width: 360px;
+    background-repeat: no-repeat;
+    height: 75px;
+    background: #fffbea;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+header .h_bottom .online_order img {
+    width: 55px;
+    height: 45px;
+    margin-left: 10px;
+}
+
+header .h_bottom .online_order span {
+    font-size: 25px;
+    padding-left: 15px;
+    padding-top: 27px;
+    display: inline-block;
+}
+
+header .h_bottom .online_order span strong {
+    color: #d61c1c;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+header .h_bottom h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../images/logo01.png);
+    width: 218px;
+    height: 96px;
+}
+
+header .h_bottom h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+header .h_bottom ul.sns {
+    padding-top: 27px;
+    float: right;
+}
+
+header .h_bottom ul.sns li {
+    float: left;
+    margin-left: 10px;
+}
+
+header .h_bottom ul.sns li a {
+    display: block;
+    width: 45px;
+    height: 45px;
+}
+
+header .h_bottom ul.sns li a img {
+    width: 45px;
+    height: 45px;
+}
+
+/*메뉴바 네비게이션*/
+nav {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    background: #fdc689;
+}
+
+nav .nav_bg {
+    width: 100%;
+    height: 190px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    display: none;
+}
+
+nav ul.gnb {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul.gnb > li {
+    width: 16.6666%;
+    float: left;
+    position: relative;
+}
+
+nav ul.gnb > li > a {
+    /*    width: 100%;*/
+    height: 40px;
+    line-height: 42px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px 0;
+    border-bottom: 0;
+    position: relative;
+}
+
+nav ul.gnb > li > a::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 4px;
+    background: #d61c1c;
+    transition: all 0.4s;
+}
+
+nav ul.gnb > li > a::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    background: #d61c1c;
+    transition: all 0.4s;
+}
+
+nav ul.gnb > li:hover > a::after {
+    width: 50%;
+    height: 4px;
+}
+
+nav ul.gnb > li:hover > a::before {
+    width: 50%;
+    height: 4px;
+}
+
+nav ul.gnb > li:hover > a {
+    color: #fff;
+}
+
+nav ul.gnb > li > ul.sub {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 55px;
+    display: none;
+}
+
+nav ul.gnb > li > ul.sub > li {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+}
+
+nav ul.gnb > li > ul.sub > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+}
+
+nav ul.gnb > li > ul.sub > li > a:hover {
+    color: #d61c1c;
+}
+
+/*footer스타일*/
+footer {
+    width: 100%;
+    height: 300px;
+    background: #363636;
+}
+
+footer h1 {
+    padding-top: 93px;
+    padding-left: 96px;
+    width: 448px;
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+}
+
+footer h1 img {
+    width: 218px;
+    height: 96px;
+}
+
+footer .f_txt {
+    width: 570px;
+    height: 100%;
+    float: left;
+    font-size: 15px;
+    color: #fff;
+}
+
+footer .f_txt span {
+    display: block;
+    padding-top: 43px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer .f_txt ul {
+    padding-top: 37px;
+}
+
+footer .f_txt ul li {
+    line-height: 1.4;
+}
+
+footer .f_txt p {
+    padding-top: 40px;
+}
